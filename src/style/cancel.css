@@ -1,0 +1,57 @@
+.cancel-page {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .cancel-page h1 {
+    color: black;
+  }
+  
+  .cancel-page p {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  .cancel-page button {
+    background-color: black;
+    color: white;
+    padding: 15px 50px;
+    display: inline-flex;
+    
+    align-items: center;
+    text-wrap: nowrap;
+    
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 20px;
+  }
+  
+  .cancel-page button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .cancel-icon {
+    
+   
+    border-radius: 10px;
+    
+    user-select: none;
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    
+    font-size: 50px; 
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #f7a35e);
+    margin: 20px 0; 
+  }
+
+  @media (max-width:352px) {
+    .cancel-page button {
+        font-size: 10px;
+    }
+  }
+  

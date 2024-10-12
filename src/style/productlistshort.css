@@ -1,0 +1,48 @@
+.lol {
+   margin: auto;
+    
+  
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  
+  .carousel-container {
+    padding-bottom: 5px;
+    padding-left: 1px;
+   
+    width: 100%;
+    
+  }
+
+
+  
+  .carousel-item {
+    width: 97%;
+    height: 100%;
+    display: flex;
+    
+  }
+  
+  .productlist-header {
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+  }
+  
+  .productlist-header-btn {
+    padding-right: 10px;
+    cursor: pointer;
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  @media screen and (max-width: 1050px) {
+    .lol {
+      width: 96%;
+    }
+  }
+  

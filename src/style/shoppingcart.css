@@ -1,0 +1,325 @@
+.shoppingcart-wrapper-complete {
+   
+    color: black;
+    overflow: hidden;
+    margin: auto;
+    text-align: start;
+    margin-bottom: 50%;
+    
+}
+
+.shoppingcart-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.shoppingcart-status {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.shoppingcart-wrapper-header {
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.shoppingcart-wrapper-container {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+   
+}
+
+.product:nth-child(n+2) {
+    margin-top: 20px;
+}
+
+.shoppingcart-products {
+    width: 60vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid;
+  
+    border-width: 1px;
+    
+    padding-bottom: 30px;
+}
+
+.shoppingcart-image {
+    height: 125px;
+    width: 150px;
+    background-color: rgba(247, 244, 244, 0.622);
+    align-content: center;
+    text-align: center;
+}
+
+.shoppingcart-image img {
+    height: 70%;
+    width: 60%;
+    margin: auto;
+    flex: 2;
+}
+
+.shoppingcart-products-interactive-flex {
+    display: flex;
+    gap: 30px;
+    width: 150px;
+    margin-left: auto;
+    justify-content: start;
+    align-items: center;
+}
+
+.shoppingcart-products-interactive-flex2 {
+    display: flex;
+    min-width: 100px;
+    padding: 3px;
+    background-color: rgba(247, 244, 244, 0.622);
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 9px;
+}
+
+.shoppingcart-products-interactive-flex2 button {
+    font-size: 18px;
+    height: 30px;
+    width: 30%;
+}
+
+.shoppingcart-products-price {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.shoppingcart-container2-wrapper {
+    width: 40%;
+    margin-left: auto;
+    background-color: rgba(239, 236, 236, 0.622);
+    margin-bottom: 500px;
+}
+
+.shoppingcart-container2 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 560px;
+    width: 100%;
+}
+
+.shoppingcart-basket {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.shoppingcart-products-text {
+    margin-left: 20px;
+    flex-wrap: wrap;
+}
+
+.shoppingcart-buy-header {
+    display: flex;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.shoppingcart-buy-sheet-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.shoppingcart-buy-sheet-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shoppingcart-buy-sheet-flex:nth-child(1) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.shoppingcart-buy-button-flex {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: auto;
+}
+
+.shoppingcart-buy-button-flex button {
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.shoppingcart-buy-button-flex button:nth-child(1) {
+    background-color: white;
+    border-color: blue;
+    border-width: 1px;
+}
+
+.shoppingcart-buy-button-flex button:nth-child(2) {
+    border: none;
+    background-color: rgba(7, 7, 201, 0.691);
+    color: white;
+}
+
+.shoppingcart-buy-button-flex button:hover {
+    background-color: rgb(200, 200, 200);
+    transition: ease-in .2s;
+}
+
+.shoppingcart-buy-sheet-total {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.shoppingcart-empty {
+    color: black;
+    height: 350px;
+    background-color: #f6f1f1;
+    justify-content: center;
+    align-content: center;
+}
+
+.shoppingcart-empty-button {
+    border: none;
+    background-color: rgba(7, 7, 201, 0.691);
+    color: white;
+    width: 35%;
+    margin: auto;
+    font-weight: 500;
+    height: 45px;
+    border-radius: 25px;
+}
+
+.shoppingcart-empty-container-flex {
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.shoppingcart-empty-h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.shoppingcart-empty-h2 {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.productpage-product-info {
+    height: 100%;
+    align-items: end;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productpage-info-section {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 30%;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1250px) {
+    .shoppingcart-basket {
+        align-items: flex-start;
+    }
+
+    .shoppingcart-products-interactive-flex {
+      
+    }
+
+    .shoppingcart-products-interactive-flex2 {
+        margin-top: 10px;
+    }
+
+    .shoppingcart-products-price {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+  
+    .shoppingcart-container2 {
+       
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .shoppingcart-title {
+        max-width: 80px;
+        text-wrap: wrap;
+        flex-wrap: wrap;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .shoppingcart-container2-wrapper {
+        margin: auto;
+        width: 100%;
+    }
+  
+    .shoppingcart-wrapper-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .shoppingcart-wrapper-container {
+        flex-direction: column;
+        
+    }
+  
+    .shoppingcart-products {
+      
+        width: 100%;
+        align-items: start;
+        justify-content: space-between;
+        border-bottom: solid;
+        border-width: 1px;
+        padding-bottom: 30px;
+        
+    }
+
+    .shoppingcart-container2-wrapper {
+        margin: auto;
+        
+        margin-bottom: 200px;
+        width: 100%;
+    }
+
+    .shoppingcart-buy-button-flex {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 50%;
+        margin: auto;
+        margin-top: auto;
+        margin-bottom: 15px;
+        z-index: 1000;
+    }
+    .shoppingcart-products-interactive-flex2 {
+       
+        
+    }
+}
+    .shoppingcart-products-interactive-flex2 button{
+        width: 3.5vh;
+    }
+    
+

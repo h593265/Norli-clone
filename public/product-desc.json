@@ -1,0 +1,112 @@
+[
+    
+    {
+        "id":"1",
+        "title": "Boker",
+        "alttitle": "Bøker",
+        "main": true,
+        "description": "En bok er en fantastisk gave, både til deg selv og de du er glad i! Lesing er sunt,  underholdende og utviklende for både store og små. Unn deg noen gode bøker i dag.",
+        "dropdownlistitems": [ ["Barnebøker","boker/barneboker"], ["Krimbøker","boker/krimboker"], ["Eventyrbøker","boker/eventyrboker"],["Alle bøker", "boker"]]
+    }
+    ,
+
+    {
+        "id":"2",
+        "title": "Leker",
+        "main": true,
+        "description": "Leker for barn av alle aldre! Se gjennom vårt spennende utvalg av ypperste kvalitet!",
+        "dropdownlistitems": [ ["Lego","leker/lego"], ["Bamser og figurer","leker/bamser-og-figurer"], ["Lekebiler","leker/lekebiler"],["Alle leker", "leker"]]
+    },
+
+    {
+        "id":"3",
+        "title": "Spill",
+        "main": true,
+        "description": "Spill er en fantastisk måte å forene familien på. Sjekk vårt utvalg på spill og puslespill",
+        "dropdownlistitems": [ ["Brettspill","spill/brettspill"], ["Kortspill","spill/kortspill"], ["Puslespill","spill/puslespill"],["Alle spill", "spill"]]
+    }
+    ,
+
+    {
+        "id":"4",
+        "title": "Tilbud",
+        "main": true,
+        "description": "Lyst på et godt tilbud? Her er en samling av varierte varer nedsatt i pris!",
+        "dropdownlistitems": []
+    },
+    {
+        "id":"5",
+        "title": "boker/barneboker",
+        "alttitle": "Barnebøker",
+        "description": "Vårt utvalg av barnebøker."
+        
+    },
+
+    {
+        "id":"6",
+        "title": "boker/krimboker",
+        "alttitle": "Krimbøker",
+        "description": "Vårt utvalg av krimbøker."
+        
+    },
+    {
+        "id":"7",
+        "title": "boker/eventyrboker",
+        "alttitle": "Eventyrbøker",
+        "description": "Vårt utvalg av eventyrbøker."
+        
+    },
+
+    {
+        "id":"8",
+        "title": "leker/lego",
+        "alttitle": "Lego",
+        "description": "Vårt utvalg av lego."
+        
+    }
+    ,
+
+    {
+        "id":"9",
+        "title": "leker/bamser-og-figurer",
+        "alttitle": "Bamser og figurer",
+        "description": "Vårt utvalg av bamser og figurer."
+        
+    }
+    ,
+
+    {
+        "id":"10",
+        "title": "leker/lekebiler",
+        "alttitle": "Lekebiler",
+        "description": "Vårt utvalg av Lekebiler."
+        
+    }
+    ,
+
+    {
+        "id":"11",
+        "title": "spill/brettspill",
+        "alttitle": "Brettspill",
+        "description": "Vårt utvalg av brettspill."
+        
+    }
+    ,
+
+    {
+        "id":"12",
+        "title": "spill/kortspill",
+        "alttitle": "Kortspill",
+        "description": "Vårt utvalg av kortspill."
+        
+    }
+    ,
+
+    {
+        "id":"13",
+        "title": "spill/puslespill",
+        "alttitle": "Puslespill",
+        "description": "Vårt utvalg av Puslespill."
+        
+    }
+]

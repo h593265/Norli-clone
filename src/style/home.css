@@ -1,0 +1,153 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 100%;
+  color: black;
+  width: 85%;
+  max-width: 1700px;
+  
+  margin-bottom: 50%;
+}
+
+.home-cat-wrapper {
+  height: 600px;
+  
+  width: 100%;
+  
+  
+  padding-bottom: 50px;
+}
+
+.home-cat-wrapper div{
+
+  cursor: pointer;
+}
+
+.home-cat-container-flex {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+  
+}
+
+.home-cat-img1,
+.home-cat-img2,
+.home-cat-img3,
+.home-cat-img4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home-cat-img1 {
+  flex: 5;
+}
+
+.home-cat-img2 {
+  flex: 4;
+  background-position-x: 20%;
+}
+
+.home-cat-img3 {
+  flex: 2;
+  background-position-y: 60%;
+  
+}
+
+.home-cat-img4 {
+  flex: 5;
+  
+}
+
+.home-cat-container-image-flex {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  gap: 10px;
+}
+
+.home-cat-text {
+  margin-left: auto;
+  height: 98%;
+  width: 98%;
+  align-content: end;
+  text-align: start;
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.medals-wrapper {
+  display: flex;
+  margin: 15px 0px;
+ 
+  width: 100%;
+  overflow-x: visible;
+ 
+}
+
+.medals-flex {
+  
+  overflow-x: hidden;
+  display: flex;
+  margin: auto;
+  gap: 8px;
+  min-width: min-content;
+}
+
+.medals-icon {
+  
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 35px;
+  min-width: fit-content;
+  
+  background-color: rgb(242, 246, 247);
+  border-radius: 25px;
+  gap: 10px;
+}
+
+.medals-icon img {
+  background-color: rgb(36, 200, 254);
+  height: 80%;
+  padding: 3px;
+  border-radius: 100%;
+}
+
+.medals-icon:last-child img {
+  background-color: rgb(252, 175, 216);
+  
+  
+}
+
+.medals-text {
+  min-width: fit-content;
+  padding-right: 10px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1050px) {
+  .home-cat-text {
+    font-size: 30px; 
+  }
+
+  .home{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-cat-container-flex {
+    flex-direction: column;
+  }
+
+  .home-cat-container-image-flex {
+    flex-direction: row;
+    gap: 5px;
+  }
+}
+
+

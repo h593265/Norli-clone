@@ -1,0 +1,53 @@
+.success-page {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .success-page h1 {
+    color: Black;
+  }
+  
+  .success-page p {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  .success-page button {
+    text-wrap: nowrap;
+    background-color: black;
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .success-page button:hover {
+    background-color: #45a049;
+  }
+  .success-icon {
+    
+   
+    border-radius: 10px;
+    
+    user-select: none;
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    
+    font-size: 50px; 
+    background: linear-gradient(45deg, #74e35e, #0cc21224, #89e365);
+    margin: 20px 0; 
+  }
+
+  p{
+    color: black;
+    text-align: center;
+    font-weight: 500;
+  }

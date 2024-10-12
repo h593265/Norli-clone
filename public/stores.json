@@ -1,0 +1,174 @@
+[
+    {
+      "name": "Norli Amfi Åkrehamn",
+      "address": "Tungarden 1, 4270 Åkrehamn",
+      "openingHours": {
+        "mon-fri": "10-19",
+        "sat": "10-18"
+      },
+      "links": {
+        "storePage": "Se butikkside",
+        "map": "Vis i kart"
+      }
+    },
+    {
+      "name": "Norli Amfi Ålgård",
+      "address": "Ole Nielsens vei 13, 4330 Ålgård",
+      "openingHours": {
+        "mon-fri": "10-20",
+        "sat": "10-18"
+      },
+      "links": {
+        "storePage": "Se butikkside",
+        "map": "Vis i kart"
+      }
+    },
+    {
+      "name": "Norli M44, Bryne",
+      "address": "Jupiterveien 2, 4340 Bryne",
+      "openingHours": {
+        "mon-fri": "10-20",
+        "sat": "10-18"
+      },
+      "links": {
+        "storePage": "Se butikkside",
+        "map": "Vis i kart"
+      }
+    },
+    {
+      "name": "Norli Haraldsgata, Haugesund",
+      "address": "Haraldsgata 100, 5528 Haugesund",
+      "openingHours": {
+        "mon-fri": "09-18",
+        "sat": "10-16"
+      },
+      "links": {
+        "storePage": "Se butikkside",
+        "map": "Vis i kart"
+      }
+    },
+    {
+      "name": "Norli Ryfylke Storsenter, Jørpeland",
+      "address": "Rådhusgt. 22, 4100 Jørpeland",
+      "openingHours": {
+        "mon-wed, fri": "9-18",
+        "thu": "9-19",
+        "sat": "10-15"
+      },
+      "links": {
+        "storePage": "Se butikkside",
+        "map": "Vis i kart"
+      }
+    },
+    {
+      "name": "Norli Oasen Karmsund",
+      "address": "Austbøvegen 16, 5508 Karmsund",
+      "openingHours": {
+        "mon-fri": "10-20",
+        "sat": "10-18"
+      },
+      "links": {
+        "storePage": "Se butikkside",
+        "map": "Vis i kart"
+      }
+    },
+    {
+      "name": "Norli Jærhagen, Klepp",
+      "address": "Solavegen 25, 4352 Kleppe",
+      "openingHours": {
+        "mon-fri": "10-20",
+        "sat": "10-18"
+      },
+      "links": {
+        "storePage": "Se butikkside",
+        "map": "Vis i kart"
+      }
+    },
+    {
+      "name": "Norli Ringo Kopervik",
+      "address": "Hovedgaten 46, 4250 Kopervik",
+      "openingHours": {
+        "mon-wed, fri": "10-17",
+        "thu": "10-18",
+        "sat": "10-15"
+      },
+      "links": {
+        "storePage": "Se butikkside",
+        "map": "Vis i kart"
+      }
+    },
+    {
+      "name": "Norli Amfi Nærbø",
+      "address": "Torggata 2, 4365 Nærbø",
+      "openingHours": {
+        "mon-fri": "9-19",
+        "sat": "9-17"
+      },
+      "links": {
+        "storePage": "Se butikkside",
+        "map": "Vis i kart"
+      }
+    },
+    {
+      "name": "Norli Kvadrat, Sandnes",
+      "address": "Gamle Stokkavei 1, 4313 Sandnes",
+      "openingHours": {
+        "mon-fri": "10-21",
+        "sat": "10-18"
+      },
+      "links": {
+        "storePage": "Se butikkside",
+        "map": "Vis i kart"
+      }
+    },
+    {
+      "name": "Norli Langgata, Sandnes",
+      "address": "Langgata 14, 4306 Sandnes",
+      "openingHours": {
+        "mon-fri": "10-19",
+        "sat": "10-16"
+      },
+      "links": {
+        "storePage": "Se butikkside",
+        "map": "Vis i kart"
+      }
+    },
+    {
+      "name": "Norli Ringo Skudeneshavn",
+      "address": "Kirkevegen 12, 4280 Skudeneshavn",
+      "openingHours": {
+        "mon-wed, fri": "10-17",
+        "thu": "10-18",
+        "sat": "10-15"
+      },
+      "links": {
+        "storePage": "Se butikkside",
+        "map": "Vis i kart"
+      }
+    },
+    {
+      "name": "Norli Amfi Madla, Stavanger",
+      "address": "Madlakrossen 7, 4042 Stavanger",
+      "openingHours": {
+        "mon-fri": "10-20",
+        "sat": "10-19"
+      },
+      "links": {
+        "storePage": "Se butikkside",
+        "map": "Vis i kart"
+      }
+    },
+    {
+      "name": "Norli Nygata, Stavanger",
+      "address": "Nygata 4-6, 4006 Stavanger",
+      "openingHours": {
+        "mon-fri": "9-19",
+        "sat": "10-18"
+      },
+      "links": {
+        "storePage": "Se butikkside",
+        "map": "Vis i kart"
+      }
+    }
+  ]
+  

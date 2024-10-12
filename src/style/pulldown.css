@@ -1,0 +1,41 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      visibility: hidden;
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+   
+   background-color: rgb(227, 224, 224);
+   z-index: 2;
+   padding: 20px;
+    position: absolute;
+    top: 42px;
+    width: 500%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    left: -200%;
+    text-align: start;
+   
+    
+    box-shadow: 0px 0px 2px rgb(138, 137, 137);
+    
+  }
+
+  .dropdown-text{
+    width: max-content;
+    border-bottom: 1px solid rgb(79, 91, 135);
+   color: black;
+  font-weight: 100;
+   cursor: pointer;
+   
+  }
+  

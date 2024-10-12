@@ -1,0 +1,151 @@
+[
+  {
+    "id": 1,
+    "title": "Captain Underpants",
+    "description": "Fourth graders George Beard and Harold Hutchins invent the wedgie-powered superhero Captain Underpants in the first book in this #1 New York Times bestselling series by Dav Pilkey, the author and illustrator of Dog Man! George and Harold are a couple of class clowns. The only thing they enjoy more than playing practical jokes is creating their own comic books. And together they've created the greatest superhero in the history of their elementary school: Captain Underpants! His true identity is SO secret, even HE doesn't know who he is!",
+    "price": 10.99,
+    "image": "/captainunderpants.jpg",
+    "author": "Ole Normann",
+    "category": "boker/barneboker",
+    "discount": 20
+  },
+  {
+    "id": 2,
+    "title": "Dragons Love Tacos",
+    "description": "Everybody loves Tacos right? But dragons are obsessed with them!",
+    "price": 12.99,
+    "image": "/dragonslovetacos.jpg",
+    "author": "Ole Normann",
+    "category": "boker/barneboker"
+  },
+  {
+    "id": 3,
+    "title": "Frog On A Log",
+    "description": "It's nothing special, just a frog on a log",
+    "price": 9.99,
+    "image": "/frogonalog.jpg",
+    "author": "Ole Normann",
+    "category": "boker/barneboker",
+    "discount": 15
+  },
+  {
+    "id": 4,
+    "title": "Dune",
+    "description": "Dune is a science fiction adventure highly praised by many. Its about this dude becoming this new leader of the sand people",
+    "price": 11.99,
+    "image": "/dune.jpg",
+    "author": "Ole Normann",
+    "category": "boker/eventyrboker"
+  },
+  {
+    "id": 5,
+    "title": "Game Of Thrones",
+    "description": "We have all seen the show, but most haven't read the bokers",
+    "price": 12.99,
+    "image": "/got.jpg",
+    "author": "Ole Normann",
+    "category": "boker/eventyrboker"
+  },
+  {
+    "id": 6,
+    "title": "Harry Potter",
+    "description": "Behold! J.K Rowling's fameous fantasy franchise about the magic trio.",
+    "price": 13.99,
+    "image": "/harrypotter-sorcerersstone.jpg",
+    "author": "Ole Normann",
+    "category": "boker/eventyrboker",
+    "discount": 10
+  },
+  {
+    "id": 7,
+    "title": "Gone Girl",
+    "description": "So what did really did happen to Nick's beautiful wife? And what was left in that half-wrapped box left so casually on their marital bed? In this novel, marriage truly is the art of war...",
+    "price": 12.99,
+    "image": "/gonegirl.jpg",
+    "author": "Ole Normann",
+    "category": "boker/krimboker"
+  },
+  {
+    "id": 8,
+    "title": "Shutter Island",
+    "description": "Forty years ago, Harriet Vanger disappeared from a family gathering on the island owned and inhabited by the powerful Vanger clan. Her body was never found, yet her uncle is convinced it was murder - and that the killer is a member of his own tightly knit but dysfunctional family.",
+    "price": 13.99,
+    "image": "/shutterisland.jpg",
+    "author": "Ole Normann",
+    "category": "boker/krimboker"
+  },
+  {
+    "id": 9,
+    "title": "The Girl With The Dragon Tattoo",
+    "description": "A rigl with a dragon Tattoo!",
+    "price": 13.99,
+    "image": "/thegirl.jpg",
+    "author": "Ole Normann",
+    "category": "boker/krimboker"
+  },
+  {
+    "id": 10,
+    "title": "LEGO Star Wars R2-D2",
+    "description": "Star Wars buildable toy figure. Create a playful centerpiece featuring this detailed brick-built LEGO figure of one of the most beloved characters in the Star Wars universe",
+    "price": 13.99,
+    "image": "/r2d2.jpg",
+    "category": "leker/lego",
+    "discount": 20
+  },
+  {
+    "id": 11,
+    "title": "LEGO Star Wars R2-D2",
+    "description": "Star Wars buildable toy figure. Create a playful centerpiece featuring this detailed brick-built LEGO figure of one of the most beloved characters in the Star Wars universe",
+    "price": 13.99,
+    "image": "/r2d2.jpg",
+    "category": "leker/lego"
+  },
+  {
+    "id": 12,
+    "title": "LEGO Star Wars R2-D2",
+    "description": "Star Wars buildable toy figure. Create a playful centerpiece featuring this detailed brick-built LEGO figure of one of the most beloved characters in the Star Wars universe",
+    "price": 13.99,
+    "image": "/r2d2.jpg",
+    "category": "leker/lego"
+  },
+  {
+    "id": 13,
+    "title": "LEGO Star Wars R2-D2",
+    "description": "Star Wars buildable toy figure. Create a playful centerpiece featuring this detailed brick-built LEGO figure of one of the most beloved characters in the Star Wars universe",
+    "price": 13.99,
+    "image": "/r2d2.jpg",
+    "category": "leker/lego"
+  },
+  {
+    "id": 14,
+    "title": "LEGO Star Wars R2-D2",
+    "description": "Star Wars buildable toy figure. Create a playful centerpiece featuring this detailed brick-built LEGO figure of one of the most beloved characters in the Star Wars universe",
+    "price": 13.99,
+    "image": "/r2d2.jpg",
+    "category": "leker/lego"
+  },
+  {
+    "id": 15,
+    "title": "LEGO Star Wars R2-D2",
+    "description": "Star Wars buildable toy figure. Create a playful centerpiece featuring this detailed brick-built LEGO figure of one of the most beloved characters in the Star Wars universe",
+    "price": 13.99,
+    "image": "/r2d2.jpg",
+    "category": "leker/lego"
+  },
+  {
+    "id": 16,
+    "title": "Fallout Board Game Brettspill",
+    "description": "Fallout Board Game Brettspill. En viltvoksende ødemark ligger foran deg, ødelagt av atomkrigen for flere hundre år siden",
+    "price": 13.99,
+    "image": "/fallout.jpeg",
+    "category": "spill/brettspill"
+  },
+  {
+    "id": 17,
+    "title": "Badchoices Kortspill",
+    "description": "Star Wars buildable toy figure. Create a playful centerpiece featuring this detailed brick-built LEGO figure of one of the most beloved characters in the Star Wars universe",
+    "price": 13.99,
+    "image": "/badchoices.jpg",
+    "category": "spill/kortspill"
+  }
+]
