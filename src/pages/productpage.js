@@ -28,24 +28,28 @@ function ProductPage({showpopup}) {
   
   useEffect(() => {
     const fetchData = async () => {
-      
+      setLoading(true); 
+
       try {
         let response;
-          const data = product.pathname.split("/");
-         const idname = data[data.length-1]
-          response = await fetch(`${config.API_URL}/products/getbytitle?idname=${encodeURIComponent(idname)}`);
+        const data = product.pathname.split("/");
+        const idname = data[data.length - 1];
+        response = await fetch(`${config.API_URL}/products/getbytitle?idname=${encodeURIComponent(idname)}`);
         
         if (!response.ok) {
           throw new Error('Failed to fetch products');
         }
+        
         const jsonData = await response.json();
         setData(jsonData);
       } catch (error) {
-        
-        console.log(error)
-      } 
+        console.log(error);
+      } finally {
+        setLoading(false); 
+      }
     };
-    setShowMore(false)
+
+    setShowMore(false);
     fetchData();
   }, [product]);
   
