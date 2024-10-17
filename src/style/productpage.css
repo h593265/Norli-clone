@@ -9,6 +9,14 @@
     margin-bottom: 50%;
 }
 
+.loading-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    font-size: 20px; 
+    color: #333; 
+  }
 
 .productpage-flex{
     
@@ -311,7 +319,7 @@ background-color: rgba(53, 53, 193, 0.663);
         color: black;
         max-width: 1700px;
         margin: auto;
-        padding-bottom: 85.5%;
+        padding-bottom: 105.5%;
         margin-bottom: 50%;
     }
     .productpage-image-container {
