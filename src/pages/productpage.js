@@ -22,6 +22,7 @@ function ProductPage({showpopup}) {
   const { user } = useAuthContext();
   const { sidebarOpen, openSidebar} = useSidebar();
   const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
   const [showMore, setShowMore] = useState(false);
   const [width, setWidth] = useState(0);
   const [liked, setLiked] = useState(false);
