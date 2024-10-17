@@ -2,10 +2,26 @@ import { useNavigate } from 'react-router-dom';
 import '../style/home.css';
 import ImageSlider from '../util/imageslider';
 import ProductListShort from '../list/product-list-short';
+import { useMain } from '../context/maincontext';
 
 
 function Home({ showpopup }) {
+
+  const handleLinkClick = (category) => {
+    setIsActive(false);
+    if (category === 'norli') {
+      setMainProp('');
+      navigate('/');
+    } else if (category === 'Tilbud') {
+      setMainProp(category);
+      navigate(`/${category}`, { state: category });
+    } else {
+      setMainProp(category);
+      navigate(`/${category}`, { state: category });
+    }
+  };
   const navigate = useNavigate();
+  const { mainProp, setMainProp } = useMain();
   const slides = [
     { url: 'carousel-nr1.jpg', title: 'boker' },
     { url: 'carousel-nr2.jpg', title: 'leker' },
@@ -37,17 +53,17 @@ function Home({ showpopup }) {
       </div>
       <div className='home-cat-wrapper'>
         <div className='home-cat-container-flex'>
-          <div className='home-cat-img1' style={{ backgroundImage: `url(${slides[0].url})` }} onClick={() => navigate(`/boker`)}>
+          <div className='home-cat-img1' style={{ backgroundImage: `url(${slides[0].url})` }} onClick={() => handleLinkClick(`/boker`)}>
             <div className='home-cat-text'>Bøker</div>
           </div>
-          <div className='home-cat-img2' style={{ backgroundImage: `url(${slides[1].url})` }} onClick={() => navigate(`/leker`)}>
+          <div className='home-cat-img2' style={{ backgroundImage: `url(${slides[1].url})` }} onClick={() => handleLinkClick(`/leker`)}>
             <div className='home-cat-text'>Leker</div>
           </div>
           <div className='home-cat-container-image-flex'>
-            <div className='home-cat-img3' style={{ backgroundImage: `url(${slides[3].url})` }} onClick={() => navigate(`/tilbud`)}>
+            <div className='home-cat-img3' style={{ backgroundImage: `url(${slides[3].url})` }} onClick={() => handleLinkClick(`/tilbud`)}>
               <div className='home-cat-text'>Tilbud</div>
             </div>
-            <div className='home-cat-img4' style={{ backgroundImage: `url(${slides[2].url})` }} onClick={() => navigate(`/spill`)}>
+            <div className='home-cat-img4' style={{ backgroundImage: `url(${slides[2].url})` }} onClick={() => handleLinkClick(`/spill`)}>
               <div className='home-cat-text'>Spill</div>
             </div>
           </div>
