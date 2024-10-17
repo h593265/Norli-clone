@@ -10,16 +10,21 @@ function Home({ showpopup }) {
   const location = useLocation();
   const { mainProp, setMainProp } = useMain();
   const handleLinkClick = (category) => {
-    
-      if (category === 'Tilbud') {
+    let newPath;
+  
+    if (category === 'Tilbud') {
       setMainProp(category);
-      navigate(`${location.pathname}${category}`);
+      newPath = `${location.pathname}/tilbud`; 
     } else {
       setMainProp(category);
-      navigate(`/${location.pathname}${category}`);
+      
+      newPath = `${location.pathname.replace(/\/[^/]*$/, '')}/${category}`;
     }
-    console.log(`${location.pathname}${category}`)
+  
+    navigate(newPath);
+    console.log(newPath);
   };
+  
   
   const slides = [
     { url: 'carousel-nr1.jpg', title: 'boker' },
@@ -52,7 +57,8 @@ function Home({ showpopup }) {
       </div>
       <div className='home-cat-wrapper'>
         <div className='home-cat-container-flex'>
-          <div className='home-cat-img1' style={{ backgroundImage: `url(${slides[0].url})` }} onClick={() => handleLinkClick(`/boker`)}>
+          <div className='home-cat-img1' style={{ backgroundImage: `url(${slides[0].url})` }} 
+          onClick={() => handleLinkClick(`/boker`)}>
             <div className='home-cat-text'>Bøker</div>
           </div>
           <div className='home-cat-img2' style={{ backgroundImage: `url(${slides[1].url})` }} onClick={() => handleLinkClick(`/leker`)}>
