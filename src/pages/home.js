@@ -13,11 +13,12 @@ function Home({ showpopup }) {
     
       if (category === 'Tilbud') {
       setMainProp(category);
-      navigate(`${location.pathname}${category}`, { state: category });
+      navigate(`${location.pathname}${category}`);
     } else {
       setMainProp(category);
-      navigate(`/${location.pathname}${category}`, { state: category });
+      navigate(`/${location.pathname}${category}`);
     }
+    console.log(`${location.pathname}${category}`)
   };
   
   const slides = [
