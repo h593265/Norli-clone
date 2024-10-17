@@ -13,10 +13,10 @@ function Home({ showpopup }) {
     
       if (category === 'Tilbud') {
       setMainProp(category);
-      navigate(`${location.pathname}/${category}`, { state: category });
+      navigate(`${location.pathname}${category}`, { state: category });
     } else {
       setMainProp(category);
-      navigate(`/${location.pathname}/${category}`, { state: category });
+      navigate(`/${location.pathname}${category}`, { state: category });
     }
   };
   
