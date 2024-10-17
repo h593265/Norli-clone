@@ -6,9 +6,10 @@ import { useMain } from '../context/maincontext';
 
 
 function Home({ showpopup }) {
-
+  const navigate = useNavigate();
+  const { mainProp, setMainProp } = useMain();
   const handleLinkClick = (category) => {
-    setIsActive(false);
+    
     if (category === 'norli') {
       setMainProp('');
       navigate('/');
@@ -20,8 +21,7 @@ function Home({ showpopup }) {
       navigate(`/${category}`, { state: category });
     }
   };
-  const navigate = useNavigate();
-  const { mainProp, setMainProp } = useMain();
+  
   const slides = [
     { url: 'carousel-nr1.jpg', title: 'boker' },
     { url: 'carousel-nr2.jpg', title: 'leker' },
