@@ -41,8 +41,20 @@ function ShoppingCart({showpopup}) {
       body: JSON.stringify(body),
     });
 
-    const session = await response.json()
-    const result = stripe.redirectToCheckout({sessionId:session.id})
+    if (!response.ok) {
+      const error = await response.json();
+      console.error("Payment Error:", error);
+      return;
+    }
+
+    if (session.id) {
+      const result = await stripe.redirectToCheckout({ sessionId: session.id });
+      if (result.error) {
+        console.log(result.error);
+      }
+    } else {
+      console.error("Session ID is missing.");
+    }
 
     if(result.error) {
       console.log(result.error)
