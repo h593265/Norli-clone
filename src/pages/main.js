@@ -11,12 +11,11 @@ function Main({ showpopup }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const { mainProp } = useMain();
-  const location = useLocation()
+  const location = useLocation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [data]);
-
- 
 
   useEffect(() => {
     if (!mainProp) return;
@@ -33,15 +32,11 @@ function Main({ showpopup }) {
         }
 
         const jsonData = await response.json();
-
-        const formatted = jsonData.find((item) => 
-          item.title.toLowerCase() == location.pathname.slice(1)
+        const formatted = jsonData.find((item) =>
+          item.title.toLowerCase() === location.pathname.slice(1)
         );
-        
-        setData(formatted || null);
-        
-        
 
+        setData(formatted || null);
       } catch (error) {
         console.error('Error fetching data:', error);
         setError('Failed to fetch data. Please try again later.');
@@ -51,14 +46,17 @@ function Main({ showpopup }) {
     };
 
     fetchData();
-
   }, [mainProp, location.pathname]);
-
-
 
   return (
     <div className="main">
-      {data ? (
+      {loading ? (
+        <div className="loading-screen">
+          <p>Loading...</p>
+        </div>
+      ) : error ? (
+        <ErrorPage />
+      ) : data ? (
         <div>
           <div className="main-top-flex">
             <div className="main-top-left"><Breadcrumbs /></div>
@@ -77,9 +75,7 @@ function Main({ showpopup }) {
             <ProductList product={data.title} allowinteractives={true} showpopup={showpopup} />
           </div>
         </div>
-      ) : (
-        <ErrorPage />
-      )}
+      ) : null}
     </div>
   );
 }
