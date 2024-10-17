@@ -46,7 +46,7 @@ function ShoppingCart({showpopup}) {
       console.error("Payment Error:", error);
       return;
     }
-
+    const session = await response.json();
     if (session.id) {
       const result = await stripe.redirectToCheckout({ sessionId: session.id });
       if (result.error) {
