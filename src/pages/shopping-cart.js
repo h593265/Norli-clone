@@ -8,6 +8,7 @@ import ProductListShort from '../list/product-list-short';
 import {loadStripe} from "@stripe/stripe-js"
 import { useAuthContext } from '../context/authprovider';
 import { useMain } from '../context/maincontext';
+import { config } from '../util/config'; 
 
 function ShoppingCart({showpopup}) {
   const { cart, removeFromCart, incrementCartItem, decrementCartItem } = useCart();
@@ -34,7 +35,7 @@ function ShoppingCart({showpopup}) {
       "Content-Type":"application/json"
     }
 
-    const response = await fetch(`http://localhost:5000/payment`, {
+    const response = await fetch(`${config.API_URL}/payment`, {
       method: "POST",
       headers: headers,
       body: JSON.stringify(body),
