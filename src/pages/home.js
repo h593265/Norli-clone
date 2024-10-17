@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import '../style/home.css';
 import ImageSlider from '../util/imageslider';
 import ProductListShort from '../list/product-list-short';
@@ -7,18 +7,16 @@ import { useMain } from '../context/maincontext';
 
 function Home({ showpopup }) {
   const navigate = useNavigate();
+  const location = useLocation();
   const { mainProp, setMainProp } = useMain();
   const handleLinkClick = (category) => {
     
-    if (category === 'norli') {
-      setMainProp('');
-      navigate('/');
-    } else if (category === 'Tilbud') {
+      if (category === 'Tilbud') {
       setMainProp(category);
-      navigate(`/${category}`, { state: category });
+      navigate(`${location.pathname}/${category}`, { state: category });
     } else {
       setMainProp(category);
-      navigate(`/${category}`, { state: category });
+      navigate(`/${location.pathname}/${category}`, { state: category });
     }
   };
   
