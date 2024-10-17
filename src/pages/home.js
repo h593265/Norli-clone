@@ -3,28 +3,23 @@ import '../style/home.css';
 import ImageSlider from '../util/imageslider';
 import ProductListShort from '../list/product-list-short';
 import { useMain } from '../context/maincontext';
-
+import {config} from '../util/config'
 
 function Home({ showpopup }) {
   const navigate = useNavigate();
   const location = useLocation();
   const { mainProp, setMainProp } = useMain();
   const handleLinkClick = (category) => {
-    let newPath;
-  
-    if (category === 'Tilbud') {
+    
+      if (category === 'Tilbud') {
       setMainProp(category);
-      newPath = `${location.pathname}/tilbud`; 
+      navigate(`${config.DOMAIN_URL}${category}`);
     } else {
       setMainProp(category);
-      
-      newPath = `${location.pathname.replace(/\/[^/]*$/, '')}/${category}`;
+      navigate(`${config.DOMAIN_URL}${category}`);
     }
-  
-    navigate(newPath);
-    console.log(newPath);
+    
   };
-  
   
   const slides = [
     { url: 'carousel-nr1.jpg', title: 'boker' },
