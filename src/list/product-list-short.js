@@ -27,7 +27,7 @@ function ProductListShort({ product, message, allowinteractives, showpopup}) {
     const fetchData = async () => {
       try {
         let response;
-        console.log(product)
+        
         if (product === "tilbud") {
           response = await fetch(`${config.API_URL}/products/getonsale`);
         } else {
