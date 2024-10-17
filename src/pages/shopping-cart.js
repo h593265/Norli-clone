@@ -56,9 +56,7 @@ function ShoppingCart({showpopup}) {
       console.error("Session ID is missing.");
     }
 
-    if(result.error) {
-      console.log(result.error)
-    }
+    
   }
 
 
