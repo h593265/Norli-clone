@@ -17,6 +17,9 @@
     font-size: 15px;
     font-weight: 300;
 }
+.shoppingcart-wrapper{
+    width: 85%;
+}
 
 .shoppingcart-wrapper-header {
     font-size: 45px;
