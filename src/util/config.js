@@ -1,9 +1,9 @@
 const dev = {
-    API_URL: 'http://localhost:5000',
+    API_URL: 'https://norli-clone-api.vercel.app',
   };
   
   const prod = {
-    API_URL: 'https://norli-clone-api.onrender.com',
+    API_URL: 'https://norli-clone-api.vercel.app',
     DOMAIN_URL: 'https://norli-clone.onrender.com'
   };
 

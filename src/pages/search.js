@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
- 
+import { config } from '../util/config';
 import ProductListSearch from '../list/product-list-search';
 import ErrorPage from './page404';
 
@@ -14,7 +14,7 @@ function SearchResults({showpopup}) {
     const fetchSearchResults = async () => {
       setLoading(true);  
       try {
-        const response = await fetch(`http://localhost:5000/products/search?query=${encodeURIComponent(searchValue)}`);
+        const response = await fetch(`${config.API_URL}/products/search?query=${encodeURIComponent(searchValue)}`);
         if (!response.ok) {
           setSearchResults([]); 
           throw new Error('Failed to fetch search results');
