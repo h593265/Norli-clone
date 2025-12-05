@@ -117,7 +117,7 @@ function ProductPage({showpopup}) {
   const bigLayout = () => (
     <div className="productpage-flex">
       <div className="productpage-image-container">
-        <img src={data.image} alt={data.title} />
+        <img src={data.image_url} alt={data.title} />
       </div>
       <div className="productpage-text-section">
         <div className="productpage-title">{data.title}</div>
@@ -191,7 +191,7 @@ function ProductPage({showpopup}) {
   const smallLayout = () => (
     <div className="productpage-flex-small">
       <div className="productpage-image-container">
-        <img src={data.image} alt={data.title} />
+        <img src={data.image_url} alt={data.title} />
       </div>
       <div className="productpage-title">{data.title}</div>
       <div className="productpage-author">{data.author}</div>

@@ -14,6 +14,7 @@ import "react-multi-carousel/lib/styles.css";
 import Favoritepopup from './components/favoritepopup';
 import Cancel from './pages/cancel';
 import Success from './pages/success';
+import APITest from './pages/apitest';
 import { SidebarProvider } from './context/sidebarcontext';
 import { AuthProvider } from './context/authprovider';
 import { MainProvider } from './context/maincontext'; 
@@ -51,6 +52,7 @@ function App() {
                   <Navbar />
                   <Routes>
                     <Route exact path="/" element={<Home showpopup={handleShowPopup} />} />
+                    <Route exact path="/api-test" element={<APITest />} />
                     <Route exact path="/search/:searchValue" element={<SearchResults showpopup={handleShowPopup}/>} />
                     <Route exact path="/:category" element={<Main showpopup={handleShowPopup} />} />
                     <Route exact path="/:category1/:category2" element={<Main showpopup={handleShowPopup} />} />

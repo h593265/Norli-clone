@@ -22,7 +22,7 @@ function CartItem({ item, removeFromCart, decrementCartItem, incrementCartItem }
         <><div className='shoppingcart-products'>
             <div className="shoppingcart-basket">
                 <div>
-                <div className="shoppingcart-image"><img src={item.image} alt={item.title} /></div>
+                <div className="shoppingcart-image"><img src={item.image_url} alt={item.title} /></div>
                 {windowWidth < 1024 && (<div style={{width:"18vh"}}>
                     <div className='shoppingcart-products-interactive-flex2'>
                         <button className="cart-button" onClick={() => decrementCartItem(item.id)}>

@@ -76,7 +76,7 @@ function Product({ product, allowinteractives, showpopup, showCartpopup }) {
             )}
             <div
               className='product-card-image-container'
-              style={{ backgroundImage: `url(${product.image})` }}
+              style={{ backgroundImage: `url(${product.image_url})` }}
             ></div>
 
             {allowinteractives && (

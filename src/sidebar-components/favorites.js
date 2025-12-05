@@ -39,7 +39,7 @@ function Favorites({ setClose }) {
             {favorites.map((item, index) => (
               <div className='favorite-list-product' key={index}>
                 <div className='favorite-list-product-image-container' onClick={() => openProductPage(item)}>
-                  <div className="favorite-list-product-img" style={{ backgroundImage: `url(${item.image})` }}> </div>
+                  <div className="favorite-list-product-img" style={{ backgroundImage: `url(${item.image_url})` }}> </div>
                 </div>
                 <div className='product-author' style={{ marginTop: "10%" }}>{item.author}</div>
                 <div className='product-title'>{item.title}</div>
