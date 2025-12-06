@@ -33,18 +33,28 @@ function ProductPage({showpopup}) {
 
       try {
         let response;
-        const data = product.pathname.split("/");
-        const idname = data[data.length - 1];
-        response = await fetch(`${config.API_URL}/products/getbytitle?idname=${encodeURIComponent(idname)}`);
+        const pathParts = product.pathname.split("/");
+        const productId = pathParts[pathParts.length - 1];
+        console.log('Fetching product with id:', productId);
+        response = await fetch(`${config.API_URL}/products/getbyid?id=${encodeURIComponent(productId)}`);
         
         if (!response.ok) {
+          console.error('Response not OK:', response.status, response.statusText);
           throw new Error('Failed to fetch products');
         }
         
         const jsonData = await response.json();
-        setData(jsonData);
+        console.log('Product data received:', jsonData);
+        
+        if (!jsonData || (Array.isArray(jsonData) && jsonData.length === 0)) {
+          console.error('No product found for id:', productId);
+          setData(null);
+        } else {
+          setData(jsonData);
+        }
       } catch (error) {
-        console.log(error);
+        console.error('Error fetching product:', error);
+        setData(null);
       } finally {
         setLoading(false); 
       }

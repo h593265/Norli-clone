@@ -37,7 +37,7 @@ function Product({ product, allowinteractives, showpopup, showCartpopup }) {
 
   const openProductPage = () => {
     
-    navigate(`/${product.category}/${product.idname}`);
+    navigate(`/${product.category}/${product.id}`);
   };
 
   const handleHeartClick = (event) => {
