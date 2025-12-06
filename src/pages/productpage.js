@@ -36,7 +36,7 @@ function ProductPage({showpopup}) {
         const pathParts = product.pathname.split("/");
         const productId = pathParts[pathParts.length - 1];
         console.log('Fetching product with id:', productId);
-        response = await fetch(`${config.API_URL}/products/getbyid?id=${encodeURIComponent(productId)}`);
+        response = await fetch(`${config.API_URL}/products/${productId}`);
         
         if (!response.ok) {
           console.error('Response not OK:', response.status, response.statusText);
