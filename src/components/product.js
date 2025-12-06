@@ -36,8 +36,9 @@ function Product({ product, allowinteractives, showpopup, showCartpopup }) {
   }, [guestFavorites, userFavorites, user, product.id]);
 
   const openProductPage = () => {
-    
-    navigate(`/${product.category}/${product.id}`);
+    // Use idname if available, otherwise fall back to id
+    const identifier = product.idname || product.id;
+    navigate(`/${product.category}/${identifier}`);
   };
 
   const handleHeartClick = (event) => {

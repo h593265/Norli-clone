@@ -34,9 +34,20 @@ function ProductPage({showpopup}) {
       try {
         let response;
         const pathParts = product.pathname.split("/");
-        const productId = parseInt(pathParts[pathParts.length - 1]);
-        console.log('Fetching product with id:', productId);
-        response = await fetch(`${config.API_URL}/products/${productId}`);
+        const identifier = pathParts[pathParts.length - 1];
+        console.log('Fetching product with identifier:', identifier);
+        
+        // Try to parse as number for id-based lookup, otherwise treat as idname
+        const numericId = parseInt(identifier);
+        const isNumeric = !isNaN(numericId) && numericId.toString() === identifier;
+        
+        if (isNumeric) {
+          // Numeric ID lookup
+          response = await fetch(`${config.API_URL}/products/${identifier}`);
+        } else {
+          // String idname lookup
+          response = await fetch(`${config.API_URL}/products/getbytitle?idname=${encodeURIComponent(identifier)}`);
+        }
         
         if (!response.ok) {
           console.error('Response not OK:', response.status, response.statusText);
@@ -46,17 +57,19 @@ function ProductPage({showpopup}) {
         const jsonData = await response.json();
         console.log('Product data received:', jsonData);
         
-        // Backend returns an array, find the specific product
+        // Backend may return an array or single object
         if (!jsonData || (Array.isArray(jsonData) && jsonData.length === 0)) {
-          console.error('No product found for id:', productId);
+          console.error('No product found for identifier:', identifier);
           setData(null);
         } else if (Array.isArray(jsonData)) {
-          // Find the product with matching id
-          const foundProduct = jsonData.find(p => p.id === productId);
+          // Find the product with matching id or idname
+          const foundProduct = isNumeric 
+            ? jsonData.find(p => p.id === numericId)
+            : jsonData.find(p => p.idname === identifier);
           if (foundProduct) {
             setData(foundProduct);
           } else {
-            console.error('Product with id', productId, 'not found in response');
+            console.error('Product with identifier', identifier, 'not found in response');
             setData(null);
           }
         } else {
