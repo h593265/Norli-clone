@@ -34,7 +34,7 @@ function ProductPage({showpopup}) {
       try {
         let response;
         const pathParts = product.pathname.split("/");
-        const productId = pathParts[pathParts.length - 1];
+        const productId = parseInt(pathParts[pathParts.length - 1]);
         console.log('Fetching product with id:', productId);
         response = await fetch(`${config.API_URL}/products/${productId}`);
         
@@ -46,9 +46,19 @@ function ProductPage({showpopup}) {
         const jsonData = await response.json();
         console.log('Product data received:', jsonData);
         
+        // Backend returns an array, find the specific product
         if (!jsonData || (Array.isArray(jsonData) && jsonData.length === 0)) {
           console.error('No product found for id:', productId);
           setData(null);
+        } else if (Array.isArray(jsonData)) {
+          // Find the product with matching id
+          const foundProduct = jsonData.find(p => p.id === productId);
+          if (foundProduct) {
+            setData(foundProduct);
+          } else {
+            console.error('Product with id', productId, 'not found in response');
+            setData(null);
+          }
         } else {
           setData(jsonData);
         }
