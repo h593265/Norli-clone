@@ -53,13 +53,13 @@ function App() {
                   <Routes>
                     <Route exact path="/" element={<Home showpopup={handleShowPopup} />} />
                     <Route exact path="/api-test" element={<APITest />} />
+                    <Route exact path="/cart" element={<ShoppingCart showpopup={handleShowPopup}/>} />
+                    <Route exact path="/cancel" element={<Cancel />} />
+                    <Route exact path="/success" element={<Success />} />
                     <Route exact path="/search/:searchValue" element={<SearchResults showpopup={handleShowPopup}/>} />
+                    <Route exact path="/:category/:subcategory/:productname" element={<ProductPage showpopup={handleShowPopup}/>} />
+                    <Route exact path="/:category/:subcategory" element={<Main showpopup={handleShowPopup} />} />
                     <Route exact path="/:category" element={<Main showpopup={handleShowPopup} />} />
-                    <Route exact path="/:category1/:category2" element={<Main showpopup={handleShowPopup} />} />
-                    <Route exact path="/:category1/:category2/:productname" element={<ProductPage showpopup={handleShowPopup}/>} />
-                    <Route exact path="cart" element={<ShoppingCart showpopup={handleShowPopup}/>} />
-                    <Route exact path="cancel" element={<Cancel />} />
-                    <Route exact path="success" element={<Success />} />
                     <Route path="/*" element={<Home />} />
                   </Routes>
                 </Router>
