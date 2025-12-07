@@ -303,7 +303,7 @@ function ProductPage({showpopup}) {
         {sidebarOpen && <Sidebar content={"Handlekurv"} onClose={openSidebar} />}
       </div>
       <div className='productpage-wrapper'>
-        <Breadcrumbs />
+        <Breadcrumbs productTitle={data && data.title} />
         {loading ? (
           <div className="loading-screen">
             <p>Loading...</p>

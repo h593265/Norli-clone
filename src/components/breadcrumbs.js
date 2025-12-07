@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import '../style/breadcrumbs.css'; 
 
-function Breadcrumbs() {
+function Breadcrumbs({ productTitle }) {
   const location = useLocation();
 
   function format() {
@@ -10,11 +10,14 @@ function Breadcrumbs() {
 
     return paths.map((path, index) => {
       const to = `/${paths.slice(0, index + 1).join('/')}`;
+      
+      // If this is the last path segment (product ID) and we have a product title, show that instead
+      const displayText = (index === paths.length - 1 && productTitle) ? productTitle : path;
 
       return (
         <div className="breadcrumb-item" key={index}>
           <Link to={to} className="breadcrumb-link">
-            {path}
+            {displayText}
           </Link>
           {index < paths.length - 1 && <span className="breadcrumb-separator">/</span>}
         </div>

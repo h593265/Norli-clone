@@ -36,12 +36,9 @@ function Product({ product, allowinteractives, showpopup, showCartpopup }) {
   }, [guestFavorites, userFavorites, user, product.id]);
 
   const openProductPage = () => {
-    // Use idname if available, otherwise fall back to id
-    const identifier = product.title;
-    const url = `/${product.category}/${identifier}`;
-    console.log('Navigating to:', url);
-    console.log('Product:', product);
-    navigate(url);
+    // Navigate to product page with category and ID
+    // ProductPage component will fetch the data using the ID
+    navigate(`/${product.category}/${product.id}`);
   };
 
   const handleHeartClick = (event) => {
