@@ -37,7 +37,7 @@ function Product({ product, allowinteractives, showpopup, showCartpopup }) {
 
   const openProductPage = () => {
     // Use idname if available, otherwise fall back to id
-    const identifier = product.idname || product.id;
+    const identifier = product.title;
     const url = `/${product.category}/${identifier}`;
     console.log('Navigating to:', url);
     console.log('Product:', product);
