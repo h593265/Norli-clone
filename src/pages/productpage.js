@@ -32,44 +32,16 @@ function ProductPage({showpopup}) {
       setLoading(true); 
 
       try {
-        let response;
         const pathParts = product.pathname.split("/");
-        const identifier = pathParts[pathParts.length - 1];
-        console.log('Fetching product with identifier:', identifier);
+        const productId = pathParts[pathParts.length - 1];
         
-        // Try to parse as number for id-based lookup, otherwise treat as idname
-        const numericId = parseInt(identifier);
-        const isNumeric = !isNaN(numericId) && numericId.toString() === identifier;
-        
-        if (isNumeric) {
-          // Numeric ID lookup
-          response = await fetch(`${config.API_URL}/products/getbyid?id=${identifier}`);
-        } 
+        const response = await fetch(`${config.API_URL}/products/getbyid?id=${productId}`);
         
         if (!response.ok) {
           console.error('Response not OK:', response.status, response.statusText);
-          throw new Error('Failed to fetch products');
-        }
-        
-        const jsonData = await response.json();
-        console.log('Product data received:', jsonData);
-        
-        // Backend may return an array or single object
-        if (!jsonData || (Array.isArray(jsonData) && jsonData.length === 0)) {
-          console.error('No product found for identifier:', identifier);
           setData(null);
-        } else if (Array.isArray(jsonData)) {
-          // Find the product with matching id or idname
-          const foundProduct = isNumeric 
-            ? jsonData.find(p => p.id === numericId)
-            : jsonData.find(p => p.idname === identifier);
-          if (foundProduct) {
-            setData(foundProduct);
-          } else {
-            console.error('Product with identifier', identifier, 'not found in response');
-            setData(null);
-          }
         } else {
+          const jsonData = await response.json();
           setData(jsonData);
         }
       } catch (error) {
