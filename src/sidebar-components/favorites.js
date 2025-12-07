@@ -20,9 +20,9 @@ function Favorites({ setClose }) {
   }, [user, userFavorites, guestFavorites]);
 
   const openProductPage = (item) => {
-    const formattedTitle = item.title.replace(/ /g, '-').toLowerCase();
     setClose(true);
-    navigate(`/${item.category}/${formattedTitle}`, { state: item });
+    // Use product ID, consistent with the product component
+    navigate(`/${item.category}/${item.id}`);
   };
 
   return (
