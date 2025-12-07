@@ -43,11 +43,8 @@ function ProductPage({showpopup}) {
         
         if (isNumeric) {
           // Numeric ID lookup
-          response = await fetch(`${config.API_URL}/products/${identifier}`);
-        } else {
-          // String idname lookup
-          response = await fetch(`${config.API_URL}/products/getbytitle?idname=${encodeURIComponent(identifier)}`);
-        }
+          response = await fetch(`${config.API_URL}/products/getbyid?id=${identifier}`);
+        } 
         
         if (!response.ok) {
           console.error('Response not OK:', response.status, response.statusText);
